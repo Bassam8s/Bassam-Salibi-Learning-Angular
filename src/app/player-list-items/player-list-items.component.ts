@@ -9,5 +9,5 @@ import {Player} from "../Models/Player";
   styleUrl: './player-list-items.component.css'
 })
 export class PlayerListItemsComponent {
-  @Input() players?: Player[];
+  @Input() players?: Player;
 }
