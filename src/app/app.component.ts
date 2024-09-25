@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Player } from "./Models/Player";
 import {NgForOf, NgIf} from "@angular/common";
+import {PlayerListComponent} from "./player-list/player-list.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NgForOf, NgIf],
+  imports: [RouterOutlet, NgForOf, NgIf, PlayerListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
