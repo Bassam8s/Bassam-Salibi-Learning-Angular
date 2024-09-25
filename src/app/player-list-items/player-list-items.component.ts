@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Player} from "../Models/Player";
 
 @Component({
   selector: 'app-player-list-items',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './player-list-items.component.css'
 })
 export class PlayerListItemsComponent {
-
+  @Input() players?: Player[];
 }

@@ -23,7 +23,6 @@ export class AppComponent {
     {id: 5, firstName: 'Kevin', lastName: 'De Bruyne', jerseyNumber: 17 , isTeamLeader: false},
     {id: 6, firstName: 'Robert', lastName: 'Lewandowski', jerseyNumber: 9}
   ];
-
 }
 
 
