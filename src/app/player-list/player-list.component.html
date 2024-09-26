@@ -1,4 +1,9 @@
-<app-player-list-items *ngFor="let player of PlayerList" [players]="player"></app-player-list-items>
+<app-player-list-items
+  *ngFor="let player of PlayerList; even as isEven"
+  [players]="player"
+  [background]=" isEven ? 'linear-gradient(-45deg, black, white, wheat)' : 'linear-gradient(45deg, gray, white, wheat)' ">
+</app-player-list-items>
+
 
 <!--<app-player-list-items [players]="Player1"></app-player-list-items>-->
 <!--<app-player-list-items [players]="Player2"></app-player-list-items>-->

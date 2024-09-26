@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import {Player} from "../Models/Player";
 import {PlayerListItemsComponent} from "../player-list-items/player-list-items.component";
-import {NgForOf} from "@angular/common";
+import {NgClass, NgForOf, NgStyle} from "@angular/common";
 
 @Component({
   selector: 'app-player-list',
   standalone: true,
   imports: [
     PlayerListItemsComponent,
-    NgForOf
+    NgForOf,
+    NgClass,
+    NgStyle
   ],
   templateUrl: './player-list.component.html',
   styleUrl: './player-list.component.css'
