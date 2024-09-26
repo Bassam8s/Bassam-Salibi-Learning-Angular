@@ -1,1 +1,12 @@
+div {
+  position: relative;
+}
+img {
+  position: absolute;
+  max-width: 150px;
+  height: 150px;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+}
 
