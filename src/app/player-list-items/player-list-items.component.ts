@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {Player} from "../Models/Player";
+import {Player} from "../Shared/Models/Player";
 import {NgStyle} from "@angular/common";
 
 @Component({
