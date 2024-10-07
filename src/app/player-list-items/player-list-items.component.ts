@@ -1,6 +1,7 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Player} from "../Shared/Models/Player";
 import {NgStyle} from "@angular/common";
+import {PlayerService} from "../Service/player.service";
 
 @Component({
   selector: 'app-player-list-items',
@@ -14,4 +15,5 @@ import {NgStyle} from "@angular/common";
 export class PlayerListItemsComponent {
   @Input() players ?: Player;
   @Input() background ?: string ;
+
 }
