@@ -1,12 +1,14 @@
 div {
   position: relative;
 }
-img {
+
+figure {
   position: absolute;
   max-width: 150px;
-  height: 150px;
-  top: 30px;
-  right: 10px;
+  height: 100px;
+  top: 20px;
+  right: 20px;
+}
+img {
   border-radius: 50%;
 }
-

@@ -5,8 +5,16 @@
 <!--  <p *ngIf="player.isTeamLeader">Team Leader</p>-->
 
 <!--</div>-->
-<app-player-list-items
-  [players]="player"
-  [background] = " 'linear-gradient(-45deg, white, white, green)' "></app-player-list-items>
-<app-player-list></app-player-list>
-<p> Sources Images : PixaPay </p>
+<div class="Navigation-bar">
+  <nav>
+    <a routerLink="/players" routerLinkActive="active">Players List</a>
+    <a routerLink="/modifyListItems" routerLinkActive="active">Modify Player</a>
+  </nav>
+</div>
+
+<!--<app-player-list-items-->
+<!--  [players]="player"-->
+<!--  [background] = " 'linear-gradient(-45deg, white, white, green)' "></app-player-list-items>-->
+<!--<app-player-list></app-player-list>-->
+<!--<p> Sources Images : PixaPay </p>-->
+<router-outlet></router-outlet>

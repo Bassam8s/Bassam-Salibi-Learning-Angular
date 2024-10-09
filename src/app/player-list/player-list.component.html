@@ -1,7 +1,8 @@
 <app-player-list-items
   *ngFor="let player of PlayerList; even as isEven"
   [players]="player"
-  [background]=" isEven ? 'linear-gradient(-45deg, black, white, wheat)' : 'linear-gradient(45deg, gray, white, wheat)' ">
+  [background]=" isEven ? 'linear-gradient(-45deg, black, white, wheat)' : 'linear-gradient(45deg, gray, white, wheat)'"
+  [routerLink]="['/players', player.id ]">
 </app-player-list-items>
 
 
