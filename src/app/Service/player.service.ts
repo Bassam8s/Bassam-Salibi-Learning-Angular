@@ -43,4 +43,8 @@ export class PlayerService {
     const player = this.players.find(player => player.id === playerId);
     return of(player);
   }
+  // New method to generate a new unique ID
+  generateNewId(): number {
+    return this.players.length > 0 ? Math.max(...this.players.map(player => player.id)) + 1 : 1;
+  }
 }
