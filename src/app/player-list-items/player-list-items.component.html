@@ -13,12 +13,18 @@
   <h1>{{players.firstName}}</h1>
   <h3>{{players.lastName}}</h3>
   <h2>{{players.jerseyNumber}}</h2>
+  <!-- Delete Button (Always Displayed Now) -->
+  <button type="button" (click)="onDelete()">Delete</button>
+
+  <!-- Back Button -->
+  <button type="button" (click)="navigateToStudentList()">Back to List</button>
   <figure>
     <img ngSrc="Players-Images/{{players.id}}.jpg" width="200" height="150" alt="Players Pictures">
     <figcaption>
       Soccer Players
     </figcaption>
   </figure>
+
 </div>
 </body>
 </html>

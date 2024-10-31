@@ -41,4 +41,10 @@ export class PlayerListItemsComponent implements OnInit {
       });
     });
   }
+  onDelete(): void {
+
+  }
+
+  navigateToStudentList(): void {
+  }
 }
