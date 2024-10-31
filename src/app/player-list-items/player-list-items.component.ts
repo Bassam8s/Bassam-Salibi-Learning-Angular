@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Player} from "../Shared/Models/Player";
-import {NgOptimizedImage, NgStyle} from "@angular/common";
+import {NgIf, NgOptimizedImage, NgStyle} from "@angular/common";
 import {ActivatedRoute, Router} from "@angular/router";
 import {PlayerService} from "../Service/player.service";
 
@@ -10,7 +10,8 @@ import {PlayerService} from "../Service/player.service";
   standalone: true,
   imports: [
     NgStyle,
-    NgOptimizedImage
+    NgOptimizedImage,
+    NgIf
   ],
   templateUrl: './player-list-items.component.html',
   styleUrl: './player-list-items.component.css'

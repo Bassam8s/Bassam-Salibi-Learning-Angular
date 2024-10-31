@@ -7,19 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>PLayers</title>
 </head>
-<style>
-  div {
-    border: 2px solid black;
-    padding: 20px;
-  }
-</style>
+
 <body>
-<div [ngStyle]="{'background-image': background}">
-  <h1>{{players?.firstName}}</h1>
-  <h3>{{players?.lastName}}</h3>
-  <h2>{{players?.jerseyNumber}}</h2>
+<div *ngIf="players" [ngStyle]="{'background-image': background}">
+  <h1>{{players.firstName}}</h1>
+  <h3>{{players.lastName}}</h3>
+  <h2>{{players.jerseyNumber}}</h2>
   <figure>
-    <img ngSrc="Players-Images/{{players?.id}}.jpg" width="200" height="150" alt="Players Pictures">
+    <img ngSrc="Players-Images/{{players.id}}.jpg" width="200" height="150" alt="Players Pictures">
     <figcaption>
       Soccer Players
     </figcaption>
