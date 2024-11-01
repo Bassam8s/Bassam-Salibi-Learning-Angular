@@ -35,9 +35,11 @@ export class PlayerService {
   }
 
   // Delete : Remove a player by ID
-  deletePlayer(playerId: number): Observable<Player[]> {
+  deletePlayer(playerId: number): void {
+
+    this.players.splice(playerId, playerId)
     this.players = this.players.filter(player => player.id !== playerId);
-    return of(this.players);
+
   }
   getPlayerById(playerId: number): Observable<Player | undefined>  {
     const player = this.players.find(player => player.id === playerId);

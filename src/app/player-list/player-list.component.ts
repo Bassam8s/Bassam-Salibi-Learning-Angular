@@ -37,4 +37,5 @@ export class PlayerListComponent implements OnInit {
   selectePlayer(player: Player): void{
     this.selectedPlayer = player;
 }
+
 }

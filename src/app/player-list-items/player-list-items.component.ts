@@ -18,15 +18,18 @@ import {PlayerService} from "../Service/player.service";
 })
 export class PlayerListItemsComponent implements OnInit {
   @Input() players ?: Player;
-  @Input() background ?: string ;
+  @Input() background ?: string;
 
   playerList: Player[] = [];
   currentIndex: number = 0;
 
   constructor(
+    private router: Router,
     private route: ActivatedRoute,
     private playerServices: PlayerService
-  ) {}
+  ) {
+  }
+
 
   ngOnInit(): void {
     this.playerServices.getPlayers().subscribe(users => {
@@ -42,9 +45,18 @@ export class PlayerListItemsComponent implements OnInit {
     });
   }
   onDelete(): void {
+    console.log("Ha")
+    const id = this.players?.id;  // Get the actual ID of the player
 
+    if (id) {
+      this.playerServices.deletePlayer(id);
+        // After deleting, update the player list and navigate to '/players'
+
+        this.router.navigate(['/players']);
+
+    }
   }
-
-  navigateToStudentList(): void {
+  onEdit(): void {
+    this.router.navigate(['/modifyListItems']);
   }
 }
