@@ -36,7 +36,7 @@ export class PlayerService {
 
   // Delete : Remove a player by ID
   deletePlayer(playerId: number): void {
-
+    // TODO fix the delete function
     this.players.splice(playerId, playerId)
     this.players = this.players.filter(player => player.id !== playerId);
 
